@@ -20,7 +20,6 @@ function Category() {
                     <div onClick={() => (pracentage !== 0 ? setPracentage(pracentage - 1) : pracentage)} className='cursor-pointer flex justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7] rounded-full mx-2' style={{ opacity: pracentage === 0 ? 0.5 : 1 }}><FaArrowLeft /></div>
                     <div onClick={() => (pracentage <= (categories.length - 9) ? setPracentage(pracentage + 1) : pracentage)} className='cursor-pointer flex justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7] rounded-full mx-2' style={{ opacity: pracentage >= (categories.length - 9)  ? 0.5 : 1 }}><FaArrowRight /></div>
                 </div>
-                {console.log(pracentage, (categories.length - 9) * 100)}
             </div>
             <div className='flex overflow-hidden relative'>
                 <div className='w-[20px] h-[20px] bg-red-400'  ></div>
